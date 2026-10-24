@@ -1,0 +1,9 @@
+run = "pip install -q -r requirements.txt && python server.py"
+modules = ["python-3.12"]
+
+[deployment]
+run = ["sh", "-c", "pip install -q -r requirements.txt && python server.py"]
+
+[[ports]]
+localPort = 8000
+externalPort = 80
